@@ -44,7 +44,11 @@ async function train(inputs,outputs) {
 
     await model.fit(xs,ys,{epochs:500});
 
-    //write value => 10 is input value, 1 input 1 output
+    let cards = document.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
+        testValue[i] = cards[i].classList.contains("active") ? 1 : 0;
+    }
+
     document.getElementById("output_field").innerText = model.predict(tf.tensor2d(testValue,[1,inputValues]));
 }
 
@@ -54,3 +58,12 @@ function showQuiz() {
 }
 
 document.getElementById("quiz").style.display = "none";
+
+function activate(_el) {
+    if (_el.classList.contains("active")) {
+        _el.classList.remove("active");
+    }
+    else {
+        _el.classList.add("active");
+    }
+}

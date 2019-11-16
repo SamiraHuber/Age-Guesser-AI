@@ -6,14 +6,56 @@
     <title>Document</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.2"></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <button onclick="run()">Train</button>
+    <button onclick="run()">Calculate Age</button>
     <button onclick="showQuiz()">Add Data</button>
     <div id="output_field">
         
     </div>
 
     <iframe id="quiz" src="https://docs.google.com/forms/d/e/1FAIpQLSd0ZlOdHx_jHwlrq6zpDe1RJ-ufImjGkLltpIJRN2fSOevD6Q/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>    <script src="scripts.js"></script>
+
+    <div id="ageGuesser">
+        Do you know...
+        <br>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5d2387914c687b00085c0f67/416x416.jpg?background=000000&cropX1=985&cropX2=2401&cropY1=279&cropY2=1694" alt="Taylor Swift">
+            Taylor Swift
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5ceee248cd1f12000a2aca56/416x416.jpg?background=000000&cropX1=1148&cropX2=2715&cropY1=1114&cropY2=2683" alt="Kylie Jenner">
+            Kylie Jenner
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5d23885c34a5c400084abcf6/416x416.jpg?background=000000&cropX1=2199&cropX2=3017&cropY1=1025&cropY2=1842" alt="Kanye West">
+            Kanye West
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5d24fc2f6012f50008cefa5a/416x416.jpg?background=000000&cropX1=0&cropX2=2415&cropY1=124&cropY2=2541" alt="Howard Stern">
+            Howard Stern
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5b3a90cba7ea4353dd3f9804/416x416.jpg?background=000000&cropX1=186&cropX2=3092&cropY1=449&cropY2=3354" alt="Dwayne Johnson">
+            Dwayne Johnson
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5b43ab9731358e2c990e91a5/416x416.jpg?background=000000&cropX1=903&cropX2=3933&cropY1=0&cropY2=3032" alt="Elton John">
+            Elton John
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5d24fb9b142c500008c8a98a/416x416.jpg?background=000000&cropX1=217&cropX2=1307&cropY1=188&cropY2=1279" alt="Ellen DeGeneres">
+            Ellen DeGeneres
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5d1cfdc54c687b00085bb111/416x416.jpg?background=000000&cropX1=481&cropX2=1238&cropY1=43&cropY2=800" alt="Billy Jiel">
+            Billy Joel
+        </div>
+        <div class="card" onclick="activate(this)">
+            <img src="https://specials-images.forbesimg.com/imageserve/5d1d07ae142c500008c82f5a/416x416.jpg?background=000000&cropX1=1317&cropX2=4366&cropY1=0&cropY2=3046" alt="Rolling Stones">
+            Rolling Stones
+        </div>
+    </div>
 </body>
 </html>
